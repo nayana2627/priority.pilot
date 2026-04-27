@@ -8,9 +8,4 @@
 __pycache__/
 *.pyc
 
-# Optional (editor / local configs)
-.cursor/
-.cursorrules
-.vscode/
-
 prioritypilot_output.json
