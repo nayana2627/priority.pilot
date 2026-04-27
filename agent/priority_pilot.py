@@ -6,7 +6,7 @@ using multi-dimensional scoring — the way an experienced APO would think.
 
 Powered by: Groq API (free tier — fastest LLM inference available)
 Model     : llama-3.3-70b-versatile
-Author    : [Your Name]
+Author    : Nayanika Madaan
 Version   : 3.0.0
 """
 
