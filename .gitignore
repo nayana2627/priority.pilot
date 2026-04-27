@@ -1,0 +1,14 @@
+# Environment variables
+.env
+
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+
+# Optional (editor / local configs)
+.cursor/
+.cursorrules
+.vscode/

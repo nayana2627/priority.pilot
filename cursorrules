@@ -1,0 +1,41 @@
+# PriorityPilot — Cursor Rules
+# These rules configure Cursor's AI behavior for this project
+
+## Project Identity
+This is PriorityPilot, an AI-powered product prioritization agent.
+It uses Groq API with the `llama-3.1-8b-instant` model to score and rank product features across 5 dimensions: Strategic Fit, User Impact, Effort, Revenue Leverage, and Time Sensitivity.
+
+## Code Style
+- Python 3.10+
+- Use type hints on all function signatures
+- Keep functions under 40 lines; extract helpers when longer
+- All API calls must be wrapped in try/except with graceful error messages
+- Never hardcode API keys; always use os.environ.get()
+- JSON output must be validated before printing
+
+## Agent Behavior Rules
+- The system prompt in priority_pilot.py is the source of truth for scoring logic
+- Do NOT change the scoring formula without updating the calculate_performance_score() function
+- The baseline comparison must always use a DIFFERENT, simpler system prompt
+- Never let the agent output unstructured prose — always enforce JSON
+
+## When editing agent/priority_pilot.py
+- Maintain backward compatibility with the CLI --demo flag
+- Keep the performance scoring dimensions aligned with the system prompt dimensions
+- All new features must include a docstring
+
+## Folder Structure
+- agent/         → Core agent logic (priority_pilot.py)
+- docs/          → Benchmark results and analysis
+- .env.example   → Template for environment variables (never .env)
+- .cursorrules   → This file
+
+## Testing Approach
+- Use --demo flag to run standard benchmark test
+- Always compare PriorityPilot output vs baseline before committing changes
+- Performance score must stay above 7500/10000 to be considered production-ready
+
+## Security
+- .env is in .gitignore — never commit it
+- Use .env.example as the only committed reference to env vars
+- Never log full API responses to console in production mode
