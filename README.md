@@ -149,6 +149,8 @@ To use in Cursor:
 
 ## Example Output
 
+![PriorityPilot Demo Output](docs/screenshots/terminal_output.png)
+
 ```
 ============================================================
   🎯 PRIORITYPILOT RESULTS
