@@ -12,3 +12,5 @@ __pycache__/
 .cursor/
 .cursorrules
 .vscode/
+
+prioritypilot_output.json
